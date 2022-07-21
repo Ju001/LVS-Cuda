@@ -23,12 +23,11 @@ In the first step, each thread samples the variance along every given direction 
 
 The second step consists in sampling the volume along the calculated streamlines. For this part the authors of the paper use a Runge-Kutta-4 like scheme, which I also implemented.
 
-### Volume Renderer
-The GUI for the volume renderer is built using QT 5.8, in addition with widgets from the VTK. For rendering I utilised the vtkSmartVolumeMapper.
-
 ### Libraries
 VTK 9.2.0 for the volume renderer.
+
 nvidia CUDA for the parallell execution of the filter kernel.
+
 QT 6 for the user interface.
 
 https://www.cg.tuwien.ac.at/courses/Visualisierung2/HallOfFame/2017/Solteszova2012/html/index.html
